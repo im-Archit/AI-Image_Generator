@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><b><b>FuturAI Image Generator<b><b></title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">FuturAI</div>
+        <ul class="nav-links">
+            <li><a href="#" class="nav-button">Home</a></li>
+            <li><a href="#" class="nav-button">Gallery</a></li>
+            <li><a href="#" class="nav-button">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1><b>AI Image Generator</b></h1>
+        <p><b>Enter a prompt to generate an AI-powered image<b></p>
+        <form id="image-form">
+            <input type="text" id="prompt" placeholder="Enter your image prompt" required>
+            <button type="submit" id="generate-btn">Generate Image</button>
+        </form>
+        <div id="result">
+            <img id="generated-image" src="" alt="Generated image" style="display: none;">
+        </div>
+        <div id="error" class="error"></div>
+        <div id="loading" class="loading" style="display: none;">Generating image...</div>
+    </div>
+
+    <div class="additional-buttons">
+        <button class="action-button">Open AI API</button>
+        <button class="action-button">Image Library</button>
+        <button class="action-button">Settings</button>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 FuturAI Image Generator. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
